@@ -24,4 +24,22 @@ class FizzBuzzTest {
         int num = 5;
         assertEquals(expected, FizzBuzz.compute(num), "Should return Buzz");
     }
+
+    @Test
+    @DisplayName("Divisible by both 3 and 5")
+    @Order(3)
+    void testDivisibleByBothThreeAndFive() {
+        String expected = "FizzBuzz";
+        int num = 15;
+        assertEquals(expected, FizzBuzz.compute(num), "Should return FizzBuzz");
+    }
+
+    @Test
+    @DisplayName("Not divisible by both 3 and 5")
+    @Order(4)
+    void testNotDivisibleByBothThreeAndFive() {
+        int num = 13;
+        String expected = String.valueOf(num);
+        assertEquals(expected, FizzBuzz.compute(num), String.format("Should return the number itself: %d", num));
+    }
 }
