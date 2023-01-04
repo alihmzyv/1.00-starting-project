@@ -1,6 +1,5 @@
 package com.luv2code.junitdemo.tdd;
 
-import com.luv2code.junitdemo.tdd.FizzBuzz;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
